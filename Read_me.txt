@@ -1,18 +1,18 @@
 Pipeline Overview
 
-Data Store: Keep all the files in our Aws EC2 storage.
+Data Store: Keep all the files in our AWS S3 storage Bucket.
 
-Data Loading: Load the CSV file from Aws EC2 to PostgreSQL using Airbyte.
+Data Loading: Load the CSV file from AWS S3 storage Bucket to PostgreSQL using Airbyte.
 
 Data Transformation: Transform the loaded data using SQL queries in dbt.
 
 Data Validation: Run queries to validate the data quality.
 
-Data Visualization: Use Metabase to visualize the transformed data.
+Data Visualization: Use Metabase to visualize the transformed data and made connection from postgres to metabase.
 
 Step-by-Step Instructions
 
-1. Load CSV Data from S3 to PostgreSQL using Airbyte
+1. Load CSV Data from AWS S3 to PostgreSQL using Airbyte
 1.1. Configure Airbyte Source (Amazon S3)
 Log in to Airbyte and navigate to the Sources tab
 
